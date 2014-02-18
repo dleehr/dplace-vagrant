@@ -1,0 +1,3 @@
+[submodule "ansible-postgresql"]
+	path = ansible-postgresql
+	url = git@github.com:dleehr/ansible-postgresql.git
