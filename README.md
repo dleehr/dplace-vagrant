@@ -1,6 +1,6 @@
 # dplace-vagrant
 
-A vagrant configuration to deploy a development virtual machine for [D-PLACE](http://github.com/NESCent/dplace-models), using Ubuntu 12.04, Ansible, Postgres, and PostGIS.
+A vagrant configuration to deploy a development virtual machine for [D-PLACE](http://github.com/NESCent/dplace), using Ubuntu 12.04, Ansible, Postgres, and PostGIS.
 
 ## Requirements
 
