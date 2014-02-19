@@ -4,7 +4,16 @@ A vagrant configuration to deploy a development virtual machine for [D-PLACE](ht
 
 ## Requirements
 
-[Vagrant](http://vagrantup.com) and [Ansible](http://ansible.com) are required, as well as [VirtualBox](http://virtualbox.org).  These packages are available on many platforms, but I've only tested this on Mac OS X 10.9.
+
+1. [Vagrant](http://vagrantup.com)
+2. [Ansible](http://ansible.com)
+3. [VirtualBox](http://virtualbox.org).  
+
+Vagrant and VirtualBox installation packages can be downloaded from their respective websites.  Ansible is a Python package with [many ways to install](http://docs.ansible.com/intro_installation.html).  I use [Homebrew](http://brew.sh) - `brew install ansible`.
+
+These packages are available on many platforms, but I've only tested this on Mac OS X 10.9.
+
+
 
 ## Getting started
 
