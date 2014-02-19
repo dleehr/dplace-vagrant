@@ -17,7 +17,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision "ansible" do |ansible|
     ansible.inventory_path = "vagrant_inventory"
     ansible.playbook = "ansible-postgresql/setup.yml"
-#    ansible.verbose = "vvvv"
     ansible.sudo = true
   end
 end
