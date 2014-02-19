@@ -10,12 +10,13 @@ Vagrant.configure("2") do |config|
   # config.vm.network :forwarded_port, guest: 80, host: 8080
   config.vm.network :private_network, ip: "192.168.111.222"
   # config.vm.network :public_network
-  # config.vm.synced_folder "../data", "/vagrant_data"
+  config.vm.synced_folder "dplace/", "/var/django/dplace/", create: true
+  config.vm.network :forwarded_port, guest: 8000, host: 8010
 
   config.vm.provision "ansible" do |ansible|
     ansible.inventory_path = "vagrant_inventory"
     ansible.playbook = "ansible-postgresql/setup.yml"
-    ansible.verbose = "vvvv"
+#    ansible.verbose = "vvvv"
     ansible.sudo = true
   end
 end
