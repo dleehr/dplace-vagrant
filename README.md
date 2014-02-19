@@ -4,6 +4,7 @@ A vagrant configuration to deploy a development virtual machine for [D-PLACE](ht
 
 ## Requirements
 
+These applications must be installed on your host machine.  They will be used to build and run a virtual machine containing D-PLACE.
 
 1. [Vagrant](http://vagrantup.com)
 2. [Ansible](http://ansible.com)
