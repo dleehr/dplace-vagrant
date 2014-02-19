@@ -1,6 +1,6 @@
 # dplace-vagrant
 
-A vagrant configuration to deploy a development virtual machine for [D-PLACE](http://github.com/NESCent/dplace-models), using Ubuntu 12.04, Ansible, Postgres, and PostGIS
+A vagrant configuration to deploy a development virtual machine for [D-PLACE](http://github.com/NESCent/dplace-models), using Ubuntu 12.04, Ansible, Postgres, and PostGIS.
 
 ## Requirements
 
@@ -19,7 +19,9 @@ With Virtualbox, vagrant, and ansible installed, deploying the virtual machine i
 
     vagrant up
 
-This command takes a while - it's downloading a base virtual machine, installing software packages, loading D-PLACE from the git repo. 
+This command takes a while - it's downloading a base virtual machine, installing software packages, loading D-PLACE from the git repo.
+
+Sometimes provisioning fails with `fatal: [192.168.111.222] => SSH encountered an unknown error during the connection.`.  In this case simply retry with `vagrant provision`
 
 ## Running/developing D-PLACE
 
@@ -32,4 +34,4 @@ The Vagrantfile configures shared folders and port forwarding, so that you can e
 
 Port 8000 on the virtual machine is forwarded to port 8010 locally, so visiting [http://127.0.0.1:8010](http://127.0.0.1:8010) should bring up the application.  
 
-Finally, The `dplace_src` directory on your host machine is synchronized with the virtual machine, so you can use any text editor on your host machine to edit the code.
+Finally vagrant creates a `dplace_src` directory on your host machine.  This directory is synchronized with the D-PLACE code on the virtual machine, so you can use any text editor on your host machine to edit the code.
