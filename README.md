@@ -4,7 +4,7 @@ A vagrant configuration to deploy a development virtual machine for [D-PLACE](ht
 
 ## Requirements
 
-[Vagrant](http://vagrantup.com) and [Ansible](http://ansible.com) are required, as well as [VirtualBox](http://virtualbox.org).
+[Vagrant](http://vagrantup.com) and [Ansible](http://ansible.com) are required, as well as [VirtualBox](http://virtualbox.org).  These packages are available on many platforms, but I've only tested this on Mac OS X 10.9.
 
 ## Getting started
 
