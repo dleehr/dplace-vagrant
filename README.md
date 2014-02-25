@@ -27,6 +27,7 @@ First, You will need to clone the repository and the submodule first:
 
 With Virtualbox, vagrant, and ansible installed, deploying the virtual machine is done with
 
+    cd vagrant
     vagrant up
 
 This command takes a while - it's downloading a base virtual machine, installing software packages, loading D-PLACE from the git repo.
