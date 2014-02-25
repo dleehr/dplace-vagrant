@@ -18,5 +18,6 @@ Vagrant.configure("2") do |config|
     ansible.inventory_path = "vagrant_inventory"
     ansible.playbook = "ansible-postgresql/setup.yml"
     ansible.sudo = true
+    ansible.host_key_checking = false
   end
 end
